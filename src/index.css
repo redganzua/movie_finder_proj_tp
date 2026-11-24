@@ -1,0 +1,26 @@
+/*
+  Descarga DM Sans (Google Fonts) y guarda el archivo en src/fonts/
+  con este nombre: DMSans-Variable.woff2
+*/
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./fonts/DMSans-Variable.woff2') format('woff2');
+  font-weight: 100 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'DM Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,54 @@
+/* Bloque: page */
+.page {
+  position: relative;
+  z-index: 0; /* crea el contexto de apilamiento para el patrón de fondo */
+  min-height: 100vh;
+  text-align: center;
+}
+
+.page__pattern {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: #0b0c15;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+}
+
+/* Bloque: header */
+.header {
+  width: 100%;
+}
+
+.header__title {
+  margin: 1.25rem 0 0;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #fff;
+}
+
+.header__title-accent {
+  background-image: linear-gradient(to right, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (min-width: 640px) {
+  .header__title {
+    font-size: 3.75rem;
+  }
+}
